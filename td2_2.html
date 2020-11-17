@@ -1,106 +1,44 @@
-<!DOCTYPE html>
-<html lang="fr">
-
+<!doctype html>
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #foot {
-            background-color: greenyellow;
-            position: absolute;
-            height: 700px;
-            width: 700px;
-            top: 200px;
-            left: 0px;
-            z-index: 5;
-        }
+	<meta charset="utf-8">
+	<title>Chapitre 2, exercice 5</title>
+	<style>
+		.exo5{position:relative;background:#99ff99;width:540px;height:380px;}
+		.exo5 div{position:absolute;text-align:center;}
 
-        #foot img {
-            height: 70px;
-            float: none;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        #foot div {
-            text-align: center;
-            width: 100px;
-            height: 100px;
-            position: absolute;
-        }
-
-        #Di {
-            top: 10px;
-            left: 50px;
-        }
-
-        #Ca {
-            top: 10px;
-            left: 300px;
-        }
-
-        #Mb {
-            top: 10px;
-            right: 50px
-        }
-
-        #Ra {
-            top: 130px;
-            left: 100px
-        }
-
-        #Ne {
-            top: 120px;
-            left: 300px
-        }
-
-        #Ve {
-            top: 130px;
-            right: 100px;
-        }
-
-        #Be {
-            top: 270px;
-            left: 30px;
-        }
-
-        #Si {
-            top: 280px;
-            left: 180px
-        }
-
-        #Ma {
-            top: 280px;
-            right: 180px
-        }
-
-        #Me {
-            top: 280px;
-            right: 30px
-        }
-
-        #Bu {
-            top: 400px;
-            left: 300px
-        }
-    </style>
+		#bb2 div {background:#00ff00;}
+	</style>
 </head>
-
 <body>
-    <div id="foot">
-        <div id="Di"><img src="images/maillot.png"><br>Di Maria</div>
-        <div id="Ca"><img src="images/maillot.png"><br>Cavani</div>
-        <div id="Mb"><img src="images/maillot.png"><br>Mbappe</div>
-        <div id="Ra"><img src="images/maillot.png"><br>Rabiot</div>
-        <div id="Ne"><img src="images/maillot.png"><br>Neymar</div>
-        <div id="Ve"><img src="images/maillot.png"><br>Verratti</div>
-        <div id="Be"><img src="images/maillot.png"><br>Bernat</div>
-        <div id="Si"><img src="images/maillot.png"><br>Silva</div>
-        <div id="Ma"><img src="images/maillot.png"><br>Marquinhos</div>
-        <div id="Me"><img src="images/maillot.png"><br>Meunier</div>
-        <div id="Bu"><img src="images/gardien.png"><br>Buffon</div>
-    </div>
-</body>
+	<div class="exo5">		
+			<div style="top:10px;left:50px;"><img src="./images/maillot.png"><br>Di Maria</div>
+			<div style="top:10px;left:230px;"><img src="./images/maillot.png"><br>Cavani</div>
+			<div style="top:10px;left:420px;"><img src="./images/maillot.png"><br>Mbappe</div>
+			<div style="top:120px;left:100px;"><img src="./images/maillot.png"><br>Rabiot</div>
+			<div style="top:110px;left:230px;"><img src="./images/maillot.png"><br>Neymar</div>
+			<div style="top:120px;left:360px;"><img src="./images/maillot.png"><br>Verratti</div>
+			<div style="top:210px;left:30px;"><img src="./images/maillot.png"><br>Bernat</div>
+			<div style="top:220px;left:150px;"><img src="./images/maillot.png"><br>Silva</div>
+			<div style="top:220px;left:300px;"><img src="./images/maillot.png"><br>Marquinhos</div>
+			<div style="top:210px;left:430px;"><img src="./images/maillot.png"><br>Meunier</div>
+			<div style="top:280px;left:225px;"><img src="./images/gardien.png"><br>Buffon</div>
+	</div>
 
+	<h1>Version avec un background aux blocs pour mieux se rendre compte</h1>
+	<div class='exo5' id="bb2">		
+			<div style="top:10px;left:50px;"><img src="./images/maillot.png"><br>Di Maria</div>
+			<div style="top:10px;left:230px;"><img src="./images/maillot.png"><br>Cavani</div>
+			<div style="top:10px;left:420px;"><img src="./images/maillot.png"><br>Mbappe</div>
+			<div style="top:120px;left:100px;"><img src="./images/maillot.png"><br>Rabiot</div>
+			<div style="top:110px;left:230px;"><img src="./images/maillot.png"><br>Neymar</div>
+			<div style="top:120px;left:360px;"><img src="./images/maillot.png"><br>Verratti</div>
+			<div style="top:210px;left:30px;"><img src="./images/maillot.png"><br>Bernat</div>
+			<div style="top:220px;left:150px;"><img src="./images/maillot.png"><br>Silva</div>
+			<div style="top:220px;left:300px;"><img src="./images/maillot.png"><br>Marquinhos</div>
+			<div style="top:210px;left:430px;"><img src="./images/maillot.png"><br>Meunier</div>
+			<div style="top:280px;left:225px;"><img src="./images/gardien.png"><br>Buffon</div>
+	</div>
+
+</body>
 </html>
