@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            #france {
+                height: 600px;
+                width: 600px;
+                background: url("images/carte_france.jpg") no-repeat;
+                position: relative;
+            }
+
+            #france div {
+                position: absolute;
+            }
+
+            .soleil {
+                height: 50px;
+                width: 50px;
+                background: url("images/soleil.png") no-repeat center/100%;
+            }
+            .nuage {
+                height: 50px;
+                width: 50px;
+                background: url("images/nuage.png") no-repeat center/contain;
+            }
+            .nuage_soleil {
+                height: 50px;
+                width: 50px;
+                background: url("images/nuage.png") no-repeat center/contain,url("images/soleil.png") no-repeat left/80%;
+            }
+            .soleil_nuage {
+                height: 50px;
+                width: 50px;
+                background: url("images/soleil.png") no-repeat left/70%,url("images/nuage.png") no-repeat center/contain;
+            }
+
+            .strasbourg {
+                top: 100px;
+                left : 417px;
+            }
+
+            .paris{
+                top: 109px;
+                left : 247px;
+            }
+
+            .nantes {
+                top: 169px;
+                left : 90px;
+            }
+
+            .bordeaux {
+                top: 300px;
+                left : 130px;
+            }
+
+            .toulouse {
+                top: 383px;
+                left : 210px;
+            }
+
+            .limoge{
+                top: 286px;
+                left : 230px;
+            }
+
+            .rouen{
+                top: 69px;
+                left : 201px;
+            }
+
+            .marseille {
+                top: 365px;
+                left : 320px;
+            }
+
+            .lille {
+                top: 0px;
+                left : 237px;
+            }
+
+            .lyon {
+                top: 266px;
+                left : 320px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="france">
+            <div class="strasbourg nuage"></div>
+            <div class="paris soleil_nuage"></div>
+            <div class="lille nuage_soleil"></div>
+            <div class="nantes soleil"></div>
+            <div class="bordeaux nuage_soleil"></div>
+            <div class="toulouse nuage"></div>
+            <div class="marseille nuage_soleil"></div>
+            <div class="lyon nuage"></div>
+            <div class="rouen nuage_soleil"></div>
+            <div class="limoge soleil"></div>
+        </div>
+    </body>
+</html>
