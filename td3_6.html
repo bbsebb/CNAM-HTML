@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>div {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        div>div {
+            height: 236px;
+            
+        }
+
+        div>div:nth-child(1),div>div:nth-child(3),div>div:nth-child(5),div>div:nth-child(7) {
+           
+            flex: 0 0 150px;          
+        }
+        div>div:nth-child(2),div>div:nth-child(6) {
+            
+            flex: 1 1 auto;         
+        }
+        div>div:nth-child(4) {
+            width: 100%;           
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div style="background-color : rgba(10, 255, 43, 0.2)">Flexbox css quin etiam et Cornelius senatores</div>
+        <div style="background-color : rgba(255, 1, 1, 0.2)">Flexbox css quin etiam et Cornelius senatores</div>
+        <div style="background-color : rgba(1, 110, 252, 0.2)">Flexbox css quin etiam et Cornelius senatores</div>
+        <div style="background-color : rgba(248, 1, 236, 0.2)">Flexbox css quin etiam et Cornelius senatores</div>
+
+        <div style="background-color : rgba(255, 251, 0, 0.2)">Flexbox css quin etiam et Cornelius senatores</div>
+        <div style="background-color : rgba(1, 198, 247, 0.2)">Flexbox css quin etiam et Cornelius senatores</div>
+        <div style="background-color : rgba(255, 1, 1, 0.2)">Flexbox css quin etiam et Cornelius senatores</div>
+
+    </div>
+</body>
+
+</html>
