@@ -5,39 +5,51 @@
     <meta charset="utf-8">
     <title>Chapitre 2, exercice 6</title>
     <style>
-        div {
-            float: left;
-            margin: 200px 2px ;
-            width: 50px;
-            vertical-align: middle;
-            text-align: center;
-            top: 20%;
+        #un, #deux {
+            height: 200px;
+            width: 200px;
+            margin: 10px
+        }
+        div>div {
+            height: 100px;
+            width: 100px;
         }
 
-        div p {
-            margin:0;
-            position: relative;
-            top : 50%;
+        #un  {
+            background-color: cornflowerblue;
+            position: static;
+        }
+
+        #un div {
+            background-color: crimson;
+            position:absolute;
+            bottom : 0px;
+        }
+
+        #deux {
+            background-color: darkgoldenrod;
+            position:relative;
+        }
+
+        #deux div {
+            background-color: darkgreen;
+            position:absolute;
+            bottom : 0px;
         }
     </style>
 </head>
 
 <body>
-    <div style='height:340px;background:#fff599;'><p>
-        B
-    </p></div>
-    <div style='height:340px;background:#fdecd2;'>I</div>
-    <div style='height:330px;background:#fdf0e7;'>E</div>
-    <div style='height:380px;background:#f7dfd3;'>N</div>
-    <div style='height:380px;background:#fbf0ee;'>V</div>
-    <div style='height:170px;background:#f8cbc6;'>E</div>
-    <div style='height:370px;background:#deddeb;'>N</div>
-    <div style='height:330px;background:#dfc5de;'>U</div>
-    <div style='height:170px;background:#e7f1fa;'>E</div>
-    <div style='height:450px;background:#bedaf0;'></div>
-    <div style='height:250px;background:#e9f5f5;'></div>
-    <div style='height:320px;background:#eef2e1;'></div>
+    <div id="un">
+        <div>
 
+        </div>
+    </div>
+    <div id="deux">
+        <div>
+
+        </div>
+    </div>
 </body>
 
 </html>
