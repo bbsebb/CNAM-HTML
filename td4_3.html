@@ -8,20 +8,35 @@
     <body>
         <form action="" method="get"></form>
         <fieldset>
-            <input type="text" name="nom" id=""><br>
-            <input type="text" name="prenom" id=""><br>
-            <input type="email" name="email" id=""><br>
-            <input type="email" name="email2" id=""><br>
-            <input type="password" name="pwd" id=""><br>
-            <input type="password" name="pwd2" id=""><br>
+            <legend>Vos coordonnées</legend>
+            <label for="nom">Nom : </label><input type="text" name="nom" id="nom"><br>
+            <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"><br>
+            <label for="email">Adresse email : </label><input type="email" name="email" id="email"><br>
+            <label for="email2">Vérification adresse email : </label><input type="email" name="email2" id="email2"><br>
+            <label for="pwd">Mot de passe : </label><input type="password" name="pwd" id="pwd"><br>
+            <label for="pwd2">Vérification mot de passe : </label><input type="password" name="pwd2" id="pwd2"><br>
         </fieldset>
         <fieldset>
+            <legend>Votre réservation</legend>
+
+            <label for="type_chmbr">Type de chambre : </label>
             <select name="type_chmbr" id="">
                 <option value="1">deux lits king size</option>
                 <option value="2">deux lits queen size</option>
                 <option value="3">un lit king size</option>
             </select><br>
-            <input type="radio" name="vue" id="">
+
+            <label>Vue :</label>
+            <input type="radio" name="vue" value="vparking" id="vparking"><label for="vparking"> parking </label>
+            <input type="radio" name="vue" value="jardin" id="jardin"><label for="jardin"> jardin </label><br>
+            
+            <label>Option : </label>
+            <input type="checkbox" name="option" value="oparking" id="oparking"><label for="oparking">Parking</label>
+            <input type="checkbox" name="option" value="pdej" id="pdej"><label for="pdej">Petit déjeuner</label>
+            <input type="checkbox" name="option" value="piscine" id="piscine"><label for="piscine">Accès à la piscine</label>
+            <br>
+            <label for="demande">Demandes spéciales</label>
+            <textarea name="demande" id="demande" cols="30" rows="10"></textarea>
         </fieldset>
     </body>
 </html>
