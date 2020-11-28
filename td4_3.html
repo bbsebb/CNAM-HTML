@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <form action="" method="get"></form>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset {
+            border-top: none;
+            border-right: none;
+        }
+
+        br+label,
+        legend+label {
+            display: inline-block;
+            width: 200px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get">
         <fieldset>
             <legend>Vos coordonnées</legend>
             <label for="nom">Nom : </label><input type="text" name="nom" id="nom"><br>
@@ -29,14 +44,18 @@
             <label>Vue :</label>
             <input type="radio" name="vue" value="vparking" id="vparking"><label for="vparking"> parking </label>
             <input type="radio" name="vue" value="jardin" id="jardin"><label for="jardin"> jardin </label><br>
-            
+
             <label>Option : </label>
             <input type="checkbox" name="option" value="oparking" id="oparking"><label for="oparking">Parking</label>
             <input type="checkbox" name="option" value="pdej" id="pdej"><label for="pdej">Petit déjeuner</label>
-            <input type="checkbox" name="option" value="piscine" id="piscine"><label for="piscine">Accès à la piscine</label>
+            <input type="checkbox" name="option" value="piscine" id="piscine"><label for="piscine">Accès à la
+                piscine</label>
             <br>
-            <label for="demande">Demandes spéciales</label>
+            <label for="demande">Demandes spéciales</label><br>
             <textarea name="demande" id="demande" cols="30" rows="10"></textarea>
         </fieldset>
-    </body>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
 </html>
