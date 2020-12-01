@@ -63,17 +63,17 @@ section#articles>article, nav>div {
     padding : 5px; 
 }
 
-h1 {
+h2 {
     margin: 2px 0px;
     text-align: center;
 }
 
-h1 .surtitre {
+h2 .surtitre {
     font: italic 12px Times;
     color: grey;
 }
 
-h1 .titre {
+h2 .titre {
     font:  12px Times;
     text-transform: uppercase;
 }
