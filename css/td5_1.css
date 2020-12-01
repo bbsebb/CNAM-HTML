@@ -16,12 +16,14 @@ body * {
 }
 header {
     height: 100px;
-    background: center bottom / contain no-repeat url("../images/td5/top.png");
+    background: center bottom / auto no-repeat url("../images/td5/top.png");
+    margin-bottom : 30px;
 }
 
 footer {
+    margin-top: 30px;
     height: 200px;
-    background: center top / contain no-repeat url("../images/td5/bottom.png");
+    background: center top / auto no-repeat url("../images/td5/bottom.png");
 }
 
 footer #copyright {
@@ -39,15 +41,12 @@ footer #copyright {
     color: grey;
 }
 
-main section {
-    margin-top: 30px;
-    margin-bottom : 30px;
-}
+
 
 main nav {
-    background: top / contain no-repeat url("../images/td5/middle.png") ;
+    background: top / auto no-repeat url("../images/td5/middle.png") ;
+    margin-top: 30px;
     padding-top: 60px;
-    margin-bottom: 30px;
 }
 
 main section#articles, main nav  {
@@ -62,11 +61,11 @@ section#articles>article, nav>div {
     border:1px solid #cccccc;
     border-radius: 5px;
     padding : 5px; 
-    text-align: center;
 }
 
 h1 {
     margin: 2px 0px;
+    text-align: center;
 }
 
 h1 .surtitre {
@@ -87,7 +86,48 @@ h1 .titre {
     color:red  ;
     font-size: 3em;
     float:left; 
-    
+    transform: scaleY(1.4);
     display: block;
-    
+}
+
+article p a{
+    color:red;
+}
+
+@media screen and (max-width: 950px) {
+    #body {
+        width: 450px;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
+    #body {
+        width: 225px;
+    }
+
+    header,footer,main nav {
+        background-size: 400px auto;
+    }
+
+    header {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        margin-top: 10px;   
+    }
+    footer #copyright {
+        padding-top: 50px;
+    }
+
+    #copyright p {
+        font-size: 0.8em;
+    }
+
+    main nav {
+        padding-top: 30px;
+    }
+
 }
