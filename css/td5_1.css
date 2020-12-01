@@ -1,0 +1,93 @@
+html {
+    font: 12px Times;
+}
+
+body {
+    background: url("../images/td5/background.png"),rgb(230, 228, 214);
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+#body {
+    width: 900px;
+    margin: auto;
+}
+header {
+    height: 100px;
+    background: center bottom / contain no-repeat url("../images/td5/top.png");
+}
+
+footer {
+    height: 200px;
+    background: center top / contain no-repeat url("../images/td5/bottom.png");
+}
+
+footer #copyright {
+    padding-top: 100px;
+    text-align: center;
+}
+
+#copyright p {
+    font: italic 12px Times;
+    color: grey;
+    
+}
+
+#copyright a {
+    color: grey;
+}
+
+main section {
+    margin-top: 30px;
+    margin-bottom : 30px;
+}
+
+main nav {
+    background: top / contain no-repeat url("../images/td5/middle.png") ;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+main section#articles, main nav  {
+    display: flex;
+    flex-wrap: wrap;   
+}
+
+section#articles>article, nav>div {
+    width: 215px;
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    padding : 5px; 
+    text-align: center;
+}
+
+h1 {
+    margin: 2px 0px;
+}
+
+h1 .surtitre {
+    font: italic 12px Times;
+    color: grey;
+}
+
+h1 .titre {
+    font:  12px Times;
+    text-transform: uppercase;
+}
+
+.debut-article {
+    color:red  ;
+}
+
+.lettrine {
+    color:red  ;
+    font-size: 3em;
+    float:left; 
+    
+    display: block;
+    
+}
