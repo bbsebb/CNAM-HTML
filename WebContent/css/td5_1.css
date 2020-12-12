@@ -17,7 +17,7 @@ body * {
 header {
     height: 100px;
     background: center bottom / auto no-repeat url("../images/td5/top.png");
-    margin-bottom : 30px;
+    margin-bottom: 30px;
 }
 
 footer {
@@ -39,6 +39,7 @@ footer #copyright {
 
 #copyright a {
     color: grey;
+    ule
 }
 
 
