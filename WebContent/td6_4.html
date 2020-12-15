@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .hover {
+            color:red;
+            transition: all 2s;
+        }
+
+        .nohover {
+            color:black;
+            transition: all 2s;
+        }
+
+    </style>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            //exo 11
+            $("#exo11 img").hover(
+                function () {
+                    
+                    $(this).attr("src", "images/volcan-de-phil-en-image.jpg");
+
+                },
+                function () {
+                    $(this).attr("src", "images/banque-images.jpg");
+                });
+            // exo 12
+            $("#exo12 p").addClass("nohover").hover(
+                function () {
+                    $(this).toggleClass("hover").toggleClass("nohover");
+
+                },
+                function () {
+                    $(this).toggleClass("hover").toggleClass("nohover");
+                });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="exo11" style="text-align: center;">
+        <img src="images/banque-images.jpg" style="width: 500px;">
+    </div>
+    <div id="exo12">
+        <p>Nam sole orto magnitudine angusti gurgitis sed profundi a transitu arcebantur et dum piscatorios quaerunt
+            lenunculos vel innare temere contextis cratibus parant, effusae legiones, quae hiemabant tunc apud Siden,
+            isdem impetu occurrere veloci. et signis prope ripam locatis ad manus comminus conserendas denseta scutorum
+            conpage semet scientissime praestruebant, ausos quoque aliquos fiducia nandi vel cavatis arborum truncis
+            amnem permeare latenter facillime trucidarunt.</p>
+        <p>Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et
+            caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae.</p>
+        <p>Alios autem dicere aiunt multo etiam inhumanius (quem locum breviter paulo ante perstrinxi) praesidii
+            adiumentique causa, non benevolentiae neque caritatis, amicitias esse expetendas; itaque, ut quisque minimum
+            firmitatis haberet minimumque virium, ita amicitias appetere maxime; ex eo fieri ut mulierculae magis
+            amicitiarum praesidia quaerant quam viri et inopes quam opulenti et calamitosi quam ii qui putentur beati.
+        </p>
+        <p>Quid? qui se etiam nunc subsidiis patrimonii aut amicorum liberalitate sustentant, hos perire patiemur? An,
+            si qui frui publico non potuit per hostem, hic tegitur ipsa lege censoria; quem is frui non sinit, qui est,
+            etiamsi non appellatur, hostis, huic ferri auxilium non oportet? Retinete igitur in provincia diutius eum,
+            qui de sociis cum hostibus, de civibus cum sociis faciat pactiones, qui hoc etiam se pluris esse quam
+            collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse
+            simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium
+            nequissimus existimaretur.</p>
+        <p>Et quoniam inedia gravi adflictabantur, locum petivere Paleas nomine, vergentem in mare, valido muro
+            firmatum, ubi conduntur nunc usque commeatus distribui militibus omne latus Isauriae defendentibus adsueti.
+            circumstetere igitur hoc munimentum per triduum et trinoctium et cum neque adclivitas ipsa sine discrimine
+            adiri letali, nec cuniculis quicquam geri posset, nec procederet ullum obsidionale commentum, maesti
+            excedunt postrema vi subigente maiora viribus adgressuri.</p>
+    </div>
+</body>
+
+</html>
