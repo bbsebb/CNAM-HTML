@@ -8,15 +8,26 @@
     <title>Document</title>
     <script src="js/jquery-3.5.1.js"></script>
     <script>
+        
         $(document).ready( function () {
+            //exo 4
             $("tr:odd").css("background-color","grey");
             
+            //exo 5
             $("img").click( function () {
                 $("img").show();
                 $(this).hide();
             })
 
+            //exo 6
+            $( "#exo6 fieldset" ).hide();
+            $( "#click, input:button" ).click(function (e) {
+                $("#click").toggle();
+                $("#exo6 fieldset").toggle();
+            })
         })
+
+
     </script>
 </head>
 
@@ -54,4 +65,14 @@
         <img src="images/gardien.png">
         <img src="images/soleil.png">
     </div>
+    <div id="exo6">
+        <div id="click" style="width: 200px; height: 30px; background-color: red;">
+            <p>afficher formulaire</p>
+        </div>
+        <fieldset>
+            <input type="text">
+            <input type="button" value="Cliquez moi" >
+        </fieldset>
+    </div>
+    
 </html>
