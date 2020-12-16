@@ -32,6 +32,13 @@ header img {
     height: 200px;
 }
 
+nav {
+    width: 780px;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
 header li {
     display: inline
 }
@@ -47,7 +54,7 @@ h2 {
 
 header li a {
     display: inline-block;
-    width: 100px;
+    width: 90px;
     background: blue;
     text-align: center;
     color: white;
