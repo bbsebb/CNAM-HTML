@@ -6,15 +6,35 @@
     <title>Document</title>
     <style>
         .hover {
-            color:red;
+            color: red;
             transition: all 2s;
         }
 
         .nohover {
-            color:black;
+            color: black;
             transition: all 2s;
         }
 
+        #exo15 p {
+            text-align: justify;
+
+            width: 500px;
+        }
+
+        #exo15 p.click {
+            text-align: center;
+            margin: auto;
+            width: 20px;
+        }
+
+        #exo16 p.hover16 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-decoration: line-through;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            text-transform: capitalize;
+
+        }
     </style>
     <script src="js/jquery-3.5.1.js"></script>
     <script>
@@ -22,7 +42,7 @@
             //exo 11
             $("#exo11 img").hover(
                 function () {
-                    
+
                     $(this).attr("src", "images/volcan-de-phil-en-image.jpg");
 
                 },
@@ -30,14 +50,41 @@
                     $(this).attr("src", "images/banque-images.jpg");
                 });
             // exo 12
-            $("#exo12 p").addClass("nohover").hover(
-                function () {
-                    $(this).toggleClass("hover").toggleClass("nohover");
+            $("#exo12 p").addClass("nohover")
+                .hover(
+                    function () {
+                        $(this).toggleClass("hover").toggleClass("nohover");
 
-                },
-                function () {
-                    $(this).toggleClass("hover").toggleClass("nohover");
+                    },
+                    function () {
+                        $(this).toggleClass("hover").toggleClass("nohover");
+                    })
+                // exo 13
+                .click(function () {
+                    $(this).css("font-weight", "bold");
+                })
+                .dblclick(function () {
+                    $(this).css("font-style", "italic");
                 });
+
+            // exo 14
+            $("#exo14 span").mouseenter(function () {
+                $(this).css("color", "red");
+            }).click(function () {
+                $(this).css("color", "green");
+            }).dblclick(function () {
+                $(this).css("color", "blue");
+            })
+            //exo 15
+            $("#exo15 p").click(function () {
+                $(this).toggleClass("click");
+            })
+
+            //exo 16
+            $("#exo16 p").hover(function () {
+                $(this).toggleClass("hover16");
+            })
+
         });
     </script>
 
@@ -67,6 +114,25 @@
             collegam putet, quod ille vos tristia voltuque deceperit, ipse numquam se minus quam erat, nequam esse
             simularit. Piso autem alio quodam modo gloriatur se brevi tempore perfecisse, ne Gabinius unus omnium
             nequissimus existimaretur.</p>
+        <p>Et quoniam inedia gravi adflictabantur, locum petivere Paleas nomine, vergentem in mare, valido muro
+            firmatum, ubi conduntur nunc usque commeatus distribui militibus omne latus Isauriae defendentibus adsueti.
+            circumstetere igitur hoc munimentum per triduum et trinoctium et cum neque adclivitas ipsa sine discrimine
+            adiri letali, nec cuniculis quicquam geri posset, nec procederet ullum obsidionale commentum, maesti
+            excedunt postrema vi subigente maiora viribus adgressuri.</p>
+    </div>
+    <div id="exo14">
+        <p><span> sole orto magnitudine angusti gurgitis sed profundi </span> a transitu arcebantur et dum piscatorios
+            quaerunt
+            lenunculos vel innare temere contextis cratibus parant, effusae legiones, quae hiemabant tunc apud Siden,
+            isdem impetu occurrere veloci. et signis prope ripam locatis ad manus comminus conserendas denseta scutorum
+            conpage semet scientissime praestruebant, ausos quoque aliquos fiducia nandi vel cavatis arborum truncis
+            amnem permeare latenter facillime trucidarunt.</p>
+    </div>
+    <div id="exo15">
+        <p>Familiae digerentibus in fors naturae Samiramidis agmina castravit inter retorquens. Familiae digerentibus in
+            fors naturae Samiramidis agmina castravit inter retorquens.</p>
+    </div>
+    <div id="exo16">
         <p>Et quoniam inedia gravi adflictabantur, locum petivere Paleas nomine, vergentem in mare, valido muro
             firmatum, ubi conduntur nunc usque commeatus distribui militibus omne latus Isauriae defendentibus adsueti.
             circumstetere igitur hoc munimentum per triduum et trinoctium et cum neque adclivitas ipsa sine discrimine
