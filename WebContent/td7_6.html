@@ -21,10 +21,25 @@
     <script>
 
         $(document).ready(function () {
-            //exo 19
+            //exo 18
             $("#exo18 h1").dblclick( function () {
                 $("#exo18 p").height(300);
+            });
+
+            //exo 19
+            $("#exo19 p").hide().click( function() {
+                $(this).hide();
             })
+
+            $("#exo19 h1").dblclick( function() {
+                $("#exo19 p").show();
+            })
+
+            $("#exo20 a").click( function(e) {
+                e.preventDefault();
+                alert("tu n'as pas le droit de partir !!!!!!");
+            })
+
         })
 
     </script>
@@ -45,6 +60,16 @@
         <h1>Titre</h1>
         <p>
             Altera sententia est, quae definit amicitiam paribus officiis ac voluntatibus. Hoc quidem est nimis
+            exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum. Divitior
+            mihi et affluentior videtur esse vera amicitia nec observare restricte, ne plus reddat quam
+            acceperit; neque enim verendum est, ne quid excidat, aut ne quid in terram defluat, aut ne plus
+            aequo quid in amicitiam congeratur.
+        </p>
+    </div>
+    <div id="exo20">
+        <h1>Titre</h1>
+        <p>
+            <a href="http://www.google.fr">Altera</a> sententia est, quae definit amicitiam paribus officiis ac voluntatibus. Hoc quidem est nimis
             exigue et exiliter ad calculos vocare amicitiam, ut par sit ratio acceptorum et datorum. Divitior
             mihi et affluentior videtur esse vera amicitia nec observare restricte, ne plus reddat quam
             acceperit; neque enim verendum est, ne quid excidat, aut ne quid in terram defluat, aut ne plus
