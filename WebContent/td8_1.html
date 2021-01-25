@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready( function() {
+            $("#album img").click ( function () {
+                var src = $(this).attr("src").substr(11);
+                $("#bg_img").html("<img src='images/td8/big_"+src+"' alt=''>");
+            })
+        });
+    </script>
+    <style>
+        #bg_img {
+        }
+
+        #album {
+            margin: auto;
+        }
+
+        #album img {
+            width: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="album">
+        <img src="images/td8/image0.jpg" alt="">
+        <img src="images/td8/image1.jpg" alt="">
+        <img src="images/td8/image2.jpg" alt="">
+        <img src="images/td8/image3.jpg" alt="">
+        <img src="images/td8/image4.jpg" alt="">
+        <img src="images/td8/image5.jpg" alt="">
+        <img src="images/td8/image6.jpg" alt="">
+    </div>
+    <div id="bg_img"></div>
+</body>
+
+</html>
