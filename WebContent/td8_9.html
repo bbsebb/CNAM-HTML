@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+            $("input").on("focus focusin focusout click",function () {
+                var nbr1 = $("#1").val();
+                var nbr2 = $("#2").val();
+                var nbr3 = $("#3").val();
+                if (nbr1 !== "" && nbr2 !== "" && nbr3 !== "") {
+                    console.log("test");
+                    $("input").css("border","");
+                    if (nbr1 >= nbr2 && nbr1 >= nbr3) {
+                        
+                        $("#1").css("border", "1px solid red");
+
+                    } 
+                    if (nbr3 >= nbr2 && nbr3 >= nbr1) {
+
+                        $("#3").css("border", "1px solid red");
+
+                    } 
+                    if (nbr2 >= nbr3 && nbr2 >= nbr1){
+                        $("#2").css("border", "1px solid red");
+                    }
+                }
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="number" name="1" id="1">
+        <input type="number" name="2" id="2">
+        <input type="number" name="3" id="3">
+    </form>
+</body>
+
+</html>

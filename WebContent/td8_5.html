@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <style>
+        #calcule,
+        #operateur {
+            margin: auto;
+            width: 80%;
+            text-align: center;
+        }
+
+
+
+        #reponse {
+            margin: 10px auto;
+            width: 80px;
+            height: 30px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            background-color: gainsboro;
+            text-align: center;
+        }
+    </style>
+
+    <script>
+
+        $(document).ready(function () {
+
+
+            $("input[value='Inverser']").click(function () {
+                console.log("test");
+                var nbr1 = Number($("#nombre1").val());
+                var nbr2 = Number($("#nombre2").val());
+                $("#nombre1").val(nbr2);
+                $("#nombre2").val(nbr1);
+            });
+            $("#operateur input").click(function () {
+                var nbr1 = Number($("#nombre1").val());
+                var nbr2 = Number($("#nombre2").val());
+                var rst = $("#reponse");
+                switch ($(this).val()) {
+                    case '+':
+                        rst.text(nbr1 + nbr2);
+                        break;
+                    case '-':
+                        rst.text(nbr1 - nbr2);
+                        break;
+                    case '*':
+                        rst.text(nbr1 * nbr2);
+                        break;
+                    case '/':
+                        rst.text((nbr2 === 0) ? 'Erreur /0' : nbr1 / nbr);
+                        break;
+                    case '%':
+                        rst.text(nbr1 % nbr2);
+                        break;
+                        case 'Moyenne':
+                        rst.text((nbr1 + nbr2)/2);
+                        break;
+                        case 'Aléatoire':
+                            if(nbr1 > nbr2) {
+                                var temp = nbr1;
+                                nbr1 = nbr2;
+                                nbr2 = temp;
+                            }
+                            var r = Math.floor(Math.random() * (nbr2 - nbr1 + 1 ) + nbr1);
+                        rst.text(r);
+                        break;
+                    default:
+                        console.log('erreur');
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <form>
+        <div id="calcule">
+            <input type="button" value="Inverser"><br><br>
+            <input type="number" name="nombre1" id="nombre1">
+            <input type="number" name="nombre2" id="nombre2">
+        </div>
+        <br>
+        <div id="operateur">
+            <input type="button" value="+">
+            <input type="button" value="-">
+            <input type="button" value="*">
+            <input type="button" value="/">
+            <input type="button" value="%"> <br>
+            <input type="button" value="Moyenne">
+            <br>
+            <input type="button" value="Aléatoire">
+        </div>
+    </form>
+    <div id="reponse"></div>
+</body>
+
+</html>

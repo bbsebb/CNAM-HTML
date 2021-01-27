@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script>
+        $(document).ready( function () {
+            var txt1 = 'texte 1';
+            var txt2 = 'texte 2';
+            $("input[value='1']").click( function () {
+                $("div").text(txt1);
+            })
+            $("input[value='2']").click( function () {
+                $("div").text(txt2);
+            })
+            $("input[value='3']").click( function () {
+                $("div").text($("#ipt1").val());
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <form action="">
+        
+        <input type="button" value="1">
+        <input type="button" value="2">
+        <input type="text" name="" id="ipt1">
+        <input type="button" value="3">
+    </form>
+    <div></div>
+</body>
+</html>
