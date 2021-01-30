@@ -10,10 +10,10 @@ header {
 header>div {
     display: flex;
     margin:auto;
-    width: 800px;
+    width: 1200px;
     display:flex;
     justify-content: space-between;
-    height: 30px;
+    height: 50px;
     align-items: center;
 }
 
@@ -29,7 +29,7 @@ header img {
 nav {
     margin: auto;
     display: flex;
-    width: 800px;
+    width: 1200px;
     justify-content: space-between;
     align-items: center;
 }
@@ -39,7 +39,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 500px;
+    width: 400px;
 }
 
 nav li {
