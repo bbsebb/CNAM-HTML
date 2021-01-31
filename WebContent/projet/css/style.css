@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    margin:0px;
+    margin:0;
 }
 
 .conteneur {
@@ -7,30 +11,42 @@ body {
     margin: auto;
 }
 
-header {
+h1 {
+    font-size: 15px;
+    color:#db2d2e;
+    font-weight: 700;
+}
+
+h2 {
+    color: #353535;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 0.125em;
+    margin-bottom: 0.4em;
+}
+
+i {
+    padding: 0px 5px;
+}
+
+#header {
     color:white;
     background-color: #333333; 
 }
 
-header>div {
+#header .conteneur {
     display: flex;
-    margin:auto;
-    display:flex;
     justify-content: space-between;
-    height: 50px;
     align-items: center;
+    height: 50px;
 }
 
-header p {
+#header p {
     display: inline-block;
     margin: 1px 10px;
 }
 
-header img {
-    height: 15px;
-}
-
-nav {
+#nav {
     margin: auto;
     display: flex;
     height: 100px;
@@ -38,7 +54,7 @@ nav {
     align-items: center;
 }
 
-nav ul {
+#nav ul {
     margin:1px 40px 1px 80px;
     display: flex;
     justify-content: space-between;
@@ -46,55 +62,71 @@ nav ul {
     
 }
 
-nav li {
+#nav li {
     list-style: none;
     margin: 0px 20px;
 }
 
-section#recherche {
+#recherche {
+    height: 600px;
+}
+
+.recherche-font{
+    z-index: -1;
+    position: absolute;
+    top:150px;
     width: 100%;
     margin:0px;
     height: 600px;
     background: no-repeat center / 140% url('../img/hero-bg.jpg');
 }
 
-#cont_recherche {
+#recherche {
     height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#dreamcar {
-    color:white;
+.recherche-droite, .recherche-gauche {
     width: 50%;
 }
 
-#formulaires {
-    width: 40%;
+.recherche-gauche {
+    color:white;
 }
 
-#formulaires>div, .formulaire {
+
+.recherche-droite>* {
     background-color: white;
 }
 
-#formulaires>div {
+.recherche-droite-onglet {
     display: inline-block;
     margin-bottom:3px;
     padding:3px;
 }
 
-.formulaire {
+.recherche-droite-formulaire {
     margin:0px;
     border:0px;
 }
 
-.formulaire>div {
-    height: 100px;
+.recherche-droite-formulaire>* {
+    padding: 5px 10px;
+}
+
+.recherche-droite-formulaire-tab {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.recherche-droite-formulaire-tab-lab {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-
+    width: 48%;
 }
 
 #f2 {

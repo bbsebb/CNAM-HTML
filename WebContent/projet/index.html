@@ -6,29 +6,38 @@
     <title>Projet</title>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jq.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/icofont.css">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="header">
+    <header id="header">
 
-        <div class="header-gauche">
-            <p>Date</p>
-            <p>info.colorlib@gmail.com</p>
-        </div>
-        <div class="header-droit">
-            <p>(+33) 388251412</p>
+        <div class="conteneur">
+            <div class="header-gauche">
+                <p>
+                    <i class="icofont-ui-clock"></i>
+                    Week day: 08:00 am to 18:00 pm
+                </p>
+                <p>
+                    <i class="icofont-email"></i>
+                    info.colorlib@gmail.com
+                </p>
+            </div>
+            <div class="header-droite">
+                <p>(+33) 388251412</p>
 
-            <p>
-                <a href="http://facebook.com"><img src="img/facebook.png" alt="Icone facebook"> </a>
-                <a href="http://twitter.com"><img src="img/twitter.webp" alt="Icone twitter"> </a>
-                <a href="http://google.com"><img src="img/google.png" alt="Icone google"> </a>
-                <a href="instagram.com"><img src="img/insta.webp" alt="Icone insta"></a>
-            </p>
+                <p>
+                    <i class="icofont-facebook"></i>
+                    <i class="icofont-google-plus"></i>
+                    <i class="icofont-instagram"></i>
+                    <i class="icofont-twitter"></i>
+                </p>
+            </div>
         </div>
     </header>
-    <nav class="nav">
+    <nav id="nav" class="conteneur">
         <img class="nav-gauche" src="img/logo.png">
         <ul class="nav-list">
             <a href="">
@@ -52,68 +61,78 @@
         </ul>
 
         <div class="nav-droite">
-            <img src="img/caddy.png" alt="icone caddy">
-            <img src="img/loupe.png" alt="icone recherche">
+            <i class="icofont-ui-cart"></i>
+            <i class="icofont-search-2"></i>
             <a href="#" title="add Car">Add car</a>
         </div>
     </nav>
     <div class="recherche-font"></div>
-    <section id="recherche">     
-            <div id="recherche-gauche">
-                <h1>Find your dream car</h1>
-                <p>Porsche Cayenne S</p>
-                <p><span>Model 2016</span> $399/Month</p>
-                <p><a href="" title="test Drive"><img src="img/wheel.png" alt="Icone volant"> Test Drive</a> <a
-                        href="#">Learn More</a></p>
-            </div>
-            <div id="recherche-droite">
-                <div>Car Rental</div>
-                <div>Buy Car</div>
-                <form action="GET">
-                    <fieldset class="formulaire" id="f1">
-                        <h2>Find Your Dream Car</h2>
+    <section id="recherche" class="conteneur">
+        <div class="recherche-gauche">
+            <h1>Find your dream car</h1>
+            <p>Porsche Cayenne S</p>
+            <p><span>Model 2016</span> $399/Month</p>
+            <p><a href="" title="test Drive"><img src="img/wheel.png" alt="Icone volant"> Test Drive</a> <a
+                    href="#">Learn More</a></p>
+        </div>
+        <div class="recherche-droite">
+            <div class="recherche-droite-onglet">Car Rental</div>
+            <div class="recherche-droite-onglet">Buy Car</div>
+            <form action="GET">
+                <fieldset class="recherche-droite-formulaire" id="f1">
+                    <h2>Find Your Dream Car</h2>
 
-                        <div>
+                    <div class="recherche-droite-formulaire-tab">
+
+                        <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_year">Select Year</label>
                             <input type="text" name="year" id="f1_year">
+                        </div>
+                        <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_brand">Select Brand</label>
                             <input type="text" name="brand" id="f1_brand">
+                        </div>
+                        <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_model">Select Model</label>
                             <input type="text" name="model" id="f1_model">
+                        </div>
+                        <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_mileage">Select Mileage</label>
                             <input type="text" name="mileage" id="f1_mileage">
-                            <label for="f1_price">Select Range:<span>$800 - $3200.100</span></label>
-                            <input type="range" min="800" max="3200" name="mileage" id="f1_price">
                         </div>
-                    </fieldset>
-                </form>
-                <from action="Get">
-                    <fieldset class="formulaire" id="f2">
-                        <legend>Find Your Dream Car</legend>
-                    </fieldset>
+                    </div>
+                    <div class="recherche-droite-formulaire-curseur">
+                        <label for="f1_price">Select Range:<span>$800 - $3200.100</span></label>
+                        <input type="range" min="800" max="3200" name="mileage" id="f1_price">
+                    </div>
+
+                </fieldset>
+                <fieldset class="recherche-droite-formulaire" id="f2">
+                    <h2>Find Your Dream Car</h2>
+                </fieldset>
                 </from>
-            </div>
+        </div>
     </section>
-    <section id="service"></section>
-    <section id="feature"></section>
-    <section id="car">
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
-        <article></article>
+    <section id="service" class="conteneur"></section>
+    <section id="feature" class="conteneur"></section>
+    <section id="car" class="conteneur">
+        <article class="car-article"></article>
+        <article class="car-article"></article>
+        <article class="car-article"></article>
+        <article class="car-article"></article>
+        <article class="car-article"></article>
+        <article class="car-article"></article>
+        <article class="car-article"></article>
+        <article class="car-article"></article>
     </section>
-    <section id="aboutus"></section>
-    <section id="blog">
-        <article></article>
-        <article></article>
-        <article></article>
+    <section id="aboutus" class="conteneur"></section>
+    <section id="blog" class="conteneur">
+        <article class="blog-article"></article>
+        <article class="blog-article"></article>
+        <article class="blog-article"></article>
     </section>
-    <section id="link"></section>
-    <footer></footer>
+    <section id="link" class="conteneur"></section>
+    <footer id="footer"></footer>
 
 </body>
 
