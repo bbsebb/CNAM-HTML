@@ -90,6 +90,7 @@ section#recherche {
 }
 
 .formulaire>div {
+    height: 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
