@@ -2,6 +2,11 @@ body {
     margin:0px;
 }
 
+.conteneur {
+    width: 80%;
+    margin: auto;
+}
+
 header {
     color:white;
     background-color: #333333; 
@@ -10,7 +15,6 @@ header {
 header>div {
     display: flex;
     margin:auto;
-    width: 1200px;
     display:flex;
     justify-content: space-between;
     height: 50px;
@@ -29,7 +33,7 @@ header img {
 nav {
     margin: auto;
     display: flex;
-    width: 1200px;
+    height: 100px;
     justify-content: space-between;
     align-items: center;
 }
@@ -39,9 +43,61 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    
 }
 
 nav li {
     list-style: none;
+    margin: 0px 20px;
 }
+
+section#recherche {
+    width: 100%;
+    margin:0px;
+    height: 600px;
+    background: no-repeat center / 140% url('../img/hero-bg.jpg');
+}
+
+#cont_recherche {
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dreamcar {
+    color:white;
+    width: 50%;
+}
+
+#formulaires {
+    width: 40%;
+}
+
+#formulaires>div, .formulaire {
+    background-color: white;
+}
+
+#formulaires>div {
+    display: inline-block;
+    margin-bottom:3px;
+    padding:3px;
+}
+
+.formulaire {
+    margin:0px;
+    border:0px;
+}
+
+.formulaire>div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+#f2 {
+    display: none;
+}
+
+
