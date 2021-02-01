@@ -5,7 +5,7 @@
 html,body {
     margin:0;
     font-size: 15px;
-    font-family: "Lato", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     color: #727171;
     font-weight: 400;
     line-height: 25px;
@@ -141,7 +141,7 @@ header img {
 .recherche-gauche p {
     font-size: 60px;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .recherche-gauche span {
