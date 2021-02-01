@@ -6,6 +6,8 @@
     <title>Projet</title>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/jq.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -33,30 +35,30 @@
     <nav id="nav" class="conteneur">
         <img class="nav-gauche" src="img/logo.png">
         <ul class="nav-list">
-            <a href="">
-                <li>Home</li>
-            </a>
-            <a href="">
-                <li>Cars</li>
-            </a>
-            <a href="">
-                <li>Blog</li>
-            </a>
-            <a href="">
-                <li>Pages</li>
-            </a>
-            <a href="">
-                <li>About</li>
-            </a>
-            <a href="">
-                <li>Contact</li>
-            </a>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Cars</a>
+            </li>
+            <li>
+                <a href="">Blog</a>
+            </li>
+            <li>
+                <a href="">Pages</a>
+            </li>
+            <li>
+                <a href="">About</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
         </ul>
 
         <div class="nav-droite">
             <img src="img/caddy.png" alt="icone caddy">
             <img src="img/loupe.png" alt="icone recherche">
-            <a href="#" title="add Car">Add car</a>
+            <a href="#" title="add Car" class="bouton-rouge">Add car</a>
         </div>
     </nav>
     <div class="recherche-font"></div>
@@ -65,8 +67,9 @@
             <h1>Find your dream car</h1>
             <p>Porsche Cayenne S</p>
             <p><span>Model 2016</span> $399/Month</p>
-            <p><a href="" title="test Drive"><img src="img/wheel.png" alt="Icone volant"> Test Drive</a> <a
-                    href="#">Learn More</a></p>
+            <a href="" title="test Drive" class="bouton-rouge"><img src="img/wheel.png" alt="Icone volant"> Test
+                Drive</a>
+            <a href="#" class="bouton-rouge">Learn More</a>
         </div>
         <div class="recherche-droite">
             <div class="recherche-droite-onglet">Car Rental</div>
@@ -98,6 +101,7 @@
                         <label for="f1_price">Select Range:<span>$800 - $3200.100</span></label>
                         <input type="range" min="800" max="3200" name="mileage" id="f1_price">
                     </div>
+                    <a href="#" class="bouton-rouge">Searching</a>
 
                 </fieldset>
                 <fieldset class="recherche-droite-formulaire" id="f2">
@@ -106,7 +110,43 @@
                 </from>
         </div>
     </section>
-    <section id="service" class="conteneur"></section>
+    <section id="service" class="conteneur">
+        <div class="service-entete">
+            <h1>Our services</h1>
+            <h2>What we offers</h2>
+            <p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti i</p>
+        </div>
+        <div class="service-liste">
+            <article>
+                <img src="img/services-1.png" alt="Icone service">
+                <h3>Rental a cars</h3>
+                <p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum
+                    liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae
+                    virginis diuturnum absentia pauperis erubesceret patris.</p>
+            </article>
+            <article>
+                <img src="img/services-2.png" alt="Icone service">
+                <h3>Buying a cars</h3>
+                <p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum
+                    liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae
+                    virginis diuturnum absentia pauperis erubesceret patris.</p>
+            </article>
+            <article>
+                <img src="img/services-3.png" alt="Icone service">
+                <h3>Car maintenance</h3>
+                <p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum
+                    liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae
+                    virginis diuturnum absentia pauperis erubesceret patris.</p>
+            </article>
+            <article>
+                <img src="img/services-4.png" alt="Icone service">
+                <h3>Support 24/7</h3>
+                <p>Hac ex causa conlaticia stipe Valerius humatur ille Publicola et subsidiis amicorum mariti inops cum
+                    liberis uxor alitur Reguli et dotatur ex aerario filia Scipionis, cum nobilitas florem adultae
+                    virginis diuturnum absentia pauperis erubesceret patris.</p>
+            </article>
+        </div>
+    </section>
     <section id="feature" class="conteneur"></section>
     <section id="car" class="conteneur">
         <article class="car-article"></article>
