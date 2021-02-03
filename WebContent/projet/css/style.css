@@ -45,7 +45,7 @@ i {
     padding: 0px 5px;
 }
 
-.bouton-rouge,.bouton-bleu,.bouton-transparent,.bouton-noir {
+.bouton-rouge,.bouton-bleu,.bouton-transparent,.bouton-noir,.bouton-blanc {
     text-decoration: none;
     color:white;
     padding: 0.9em 1.3em;
@@ -69,6 +69,11 @@ i {
 
 .bouton-noir {
     background-color:#222;
+}
+
+.bouton-blanc {
+    background-color:#ffffff;
+    color:#323232;
 }
 
 
@@ -105,8 +110,8 @@ header img {
     align-items: center;
 }
 
-#nav ul {
-    margin:1px 40px 1px 80px;
+.nav-list {
+    padding: 0 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,13 +273,13 @@ header img {
 }
 
 #feature {
-    background:no-repeat center url('../img/feature-car.png');
+    background:no-repeat center / 50% url('../img/feature-car.png');
     display: flex;
     justify-content: space-between;
 }
 
 .feature-gauche,.feature-droite{
-    width: 30%;
+    width: 350px;
 }
 
 .feature-droite {
@@ -376,3 +381,54 @@ header img {
 .car-article-prix span{
     color:#db2d2e;
 }
+
+#footer{
+    background: no-repeat center url("../img/footer-bg.jpg");
+    height: 500px;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom:1px solid #727171;
+    margin-bottom: 30px;
+}
+
+.footer-contact h2{
+    display: inline-block;
+    color:white;
+}
+
+.footer-lien {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.footer-lien-social {
+    width: 300px;
+}
+
+.footer-lien h1 {
+    color:white;
+}
+
+.footer-lien ul{
+    padding:0;
+    height: 100px;
+}
+
+.footer-lien li{
+    list-style: none;
+}
+
+.footer-lien a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.footer-copyright{
+    margin-top: 40px;
+}
+
