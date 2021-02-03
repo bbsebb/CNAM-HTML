@@ -86,40 +86,67 @@
         <div class="recherche-droite">
             <div class="recherche-droite-onglet">Car Rental</div>
             <div class="recherche-droite-onglet">Buy Car</div>
-            <form action="GET">
-                <fieldset class="recherche-droite-formulaire" id="f1">
-                    <h2>Find Your Dream Car</h2>
+            <form class="recherche-droite-formulaire" id="f1"
+                action="http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php" method="POST">
 
+                <h2>Find Your Dream Car</h2>
+
+                <div class="recherche-droite-formulaire-tab">
+
+                    <div class="recherche-droite-formulaire-tab-lab">
+                        <label for="f1_year">Select Year</label>
+                        <input type="text" name="yearf1" id="f1_year">
+                    </div>
+                    <div class="recherche-droite-formulaire-tab-lab">
+                        <label for="f1_brand">Select Brand</label>
+                        <input type="text" name="brandf1" id="f1_brand">
+                    </div>
+                    <div class="recherche-droite-formulaire-tab-lab">
+                        <label for="f1_model">Select Model</label>
+                        <input type="text" name="modelf1" id="f1_model">
+                    </div>
+                    <div class="recherche-droite-formulaire-tab-lab">
+                        <label for="f1_mileage">Select Mileage</label>
+                        <input type="text" name="mileagef1" id="f1_mileage">
+                    </div>
+                </div>
+                <div class="recherche-droite-formulaire-curseur">
+                    <label for="f1_price">Select Range:<span>$800 - $3200.100</span></label>
+                    <input type="range" min="800" max="3200" name="pricef1" id="f1_price">
+                </div>
+                <input type="submit" values="Searching" class="bouton-rouge">
+                </form>
+
+                <form class="recherche-droite-formulaire" id="f2"
+                    action="http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php" method="POST">
+                    <h2>Buy Your Dream Car</h2>
                     <div class="recherche-droite-formulaire-tab">
 
                         <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_year">Select Year</label>
-                            <input type="text" name="year" id="f1_year">
+                            <input type="text" name="yearf2" id="f1_year">
                         </div>
                         <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_brand">Select Brand</label>
-                            <input type="text" name="brand" id="f1_brand">
+                            <input type="text" name="brandf2" id="f1_brand">
                         </div>
                         <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_model">Select Model</label>
-                            <input type="text" name="model" id="f1_model">
+                            <input type="text" name="modelf2" id="f1_model">
                         </div>
                         <div class="recherche-droite-formulaire-tab-lab">
                             <label for="f1_mileage">Select Mileage</label>
-                            <input type="text" name="mileage" id="f1_mileage">
+                            <input type="text" name="mileagef2" id="f1_mileage">
                         </div>
                     </div>
                     <div class="recherche-droite-formulaire-curseur">
-                        <label for="f1_price">Select Range:<span>$800 - $3200.100</span></label>
-                        <input type="range" min="800" max="3200" name="mileage" id="f1_price">
+                        <label for="f1_price">Select Range:<span>$10,000 - $300,000</span></label>
+                        <input type="range" min="800" max="3200" name="pricef2" id="f1_price">
                     </div>
-                    <a href="#" class="bouton-rouge">Searching</a>
+                    <input type="submit" values="Searching" class="bouton-rouge">
 
-                </fieldset>
-                <fieldset class="recherche-droite-formulaire" id="f2">
-                    <h2>Find Your Dream Car</h2>
-                </fieldset>
-                </from>
+                </form>
+
         </div>
     </section>
     <section id="service" class="conteneur">
@@ -421,7 +448,8 @@
             <div class="footer-lien">
                 <div class="footer-lien-social">
                     <img src="img/footer-logo.png" alt="logo">
-                    <p>Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us on (+1)
+                    <p>Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us on
+                        (+1)
                         96 123 8888
                     </p>
                     <p>
@@ -435,16 +463,16 @@
                     <h1>Information</h1>
                     <ul>
                         <li>
-                            <a href="#" >&gt; Purchase </a>
+                            <a href="#">&gt; Purchase </a>
                         </li>
                         <li>
-                            <a href="#" >&gt; Payement </a>
-                        </li>
-                        <li>    
-                            <a href="#" >&gt; Shipping </a>
+                            <a href="#">&gt; Payement </a>
                         </li>
                         <li>
-                            <a href="#" >&gt; Return</a>
+                            <a href="#">&gt; Shipping </a>
+                        </li>
+                        <li>
+                            <a href="#">&gt; Return</a>
                         </li>
                     </ul>
                 </div>
@@ -452,16 +480,16 @@
                     <h1>Information</h1>
                     <ul>
                         <li>
-                            <a href="#" >&gt; Hatchback</a>
+                            <a href="#">&gt; Hatchback</a>
                         </li>
                         <li>
-                            <a href="#" >&gt; Sedan</a>
-                        </li>
-                        <li>    
-                            <a href="#" >&gt; SUV</a>
+                            <a href="#">&gt; Sedan</a>
                         </li>
                         <li>
-                            <a href="#" >&gt; Crossover</a>
+                            <a href="#">&gt; SUV</a>
+                        </li>
+                        <li>
+                            <a href="#">&gt; Crossover</a>
                         </li>
                     </ul>
                 </div>
@@ -469,16 +497,16 @@
                     <h1>Top Brand</h1>
                     <ul>
                         <li>
-                            <a href="#" >&gt; Abarth</a>
+                            <a href="#">&gt; Abarth</a>
                         </li>
                         <li>
-                            <a href="#" >&gt; Acura</a>
-                        </li>
-                        <li>    
-                            <a href="#" >&gt; Alfa Romeo</a>
+                            <a href="#">&gt; Acura</a>
                         </li>
                         <li>
-                            <a href="#" >&gt; Audi</a>
+                            <a href="#">&gt; Alfa Romeo</a>
+                        </li>
+                        <li>
+                            <a href="#">&gt; Audi</a>
                         </li>
                     </ul>
                 </div>
@@ -486,24 +514,24 @@
                     <h1>&#160;</h1>
                     <ul>
                         <li>
-                            <a href="#" >&gt; BMW</a>
+                            <a href="#">&gt; BMW</a>
                         </li>
                         <li>
-                            <a href="#" >&gt; Chevrolet</a>
+                            <a href="#">&gt; Chevrolet</a>
                         </li>
-                        <li>    
-                            <a href="#" >&gt; Ferrari</a>
+                        <li>
+                            <a href="#">&gt; Ferrari</a>
                         </li>
                         <li>
                             <a href="#">&gt; Honda</a>
                         </li>
                     </ul>
                 </div>
-                </div>
-                <div class="footer-copyright">
-                    Copyright ©2021 All rights reserved | This template is made with by Colorlib
-                </div>
             </div>
+            <div class="footer-copyright">
+                Copyright ©2021 All rights reserved | This template is made with by Colorlib
+            </div>
+        </div>
         </div>
     </footer>
 

@@ -128,6 +128,11 @@ header img {
     color: #323232;
     font-weight: 700;
     text-transform: uppercase;
+    padding-bottom:0.8em;
+}
+
+#nav li a:hover {
+    border-bottom: 2px solid red;
 }
 
 #recherche {
@@ -185,7 +190,6 @@ header img {
 
 .recherche-droite>* {
     background-color: white;
-    border-radius: 2px;
 }
 
 .recherche-droite-onglet {
@@ -197,6 +201,8 @@ header img {
     font-weight: 700;
     text-align: center;
     font-size: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .recherche-droite h2 {
@@ -208,7 +214,8 @@ header img {
 .recherche-droite-formulaire {
     margin:0px;
     border:0px;
-
+    padding:30px;
+    border-radius: 2px;
     color:#323232;
 }
 
@@ -225,7 +232,7 @@ header img {
 .recherche-droite-formulaire-tab-lab,.recherche-droite-formulaire-curseur {
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .recherche-droite-formulaire-tab-lab {
@@ -241,14 +248,11 @@ header img {
     margin-bottom: 0.3em;
 }
 
-.recherche-droite-formulaire a {
-    display: inline-block;
+.recherche-droite-formulaire input {
     margin-bottom: 30px;
+    border:0;
 }
 
-#f2 {
-    display: none;
-}
 
 .service-entete>* {
     text-align: center;
@@ -280,6 +284,19 @@ header img {
 
 .feature-gauche,.feature-droite{
     width: 350px;
+}
+
+.feature-gauche .bouton-rouge:hover {
+    padding:1em 1.4em;  
+}
+
+.feature-gauche .bouton-noir:hover {
+    padding:1em 1.4em;  
+}
+
+.feature-droite-feature:hover p{
+    color:#db2d2e;
+    transition: 1s;
 }
 
 .feature-droite {
