@@ -17,69 +17,6 @@ html,body {
     padding:0 40px;
 }
 
-h1 {
-    font-size: 15px;
-    color:#db2d2e;
-    font-weight: 700;
-    text-transform: capitalize;
-}
-
-h2,h3 {
-    color: #353535;
-    font-weight: 700;
-    text-transform: capitalize;
-    margin-top: 0.125em;
-    margin-bottom: 0.4em;
-    line-height: 1.2em;
-}
-
-h2 {
-    font-size: 40px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-i {
-    padding: 0px 5px;
-}
-
-.bouton-rouge,.bouton-bleu,.bouton-transparent,.bouton-noir,.bouton-blanc {
-    text-decoration: none;
-    color:white;
-    padding: 0.9em 1.3em;
-    border-radius: 2px;
-    font-weight: 600;
-    margin: 0px 5px;
-}
-
-.bouton-bleu {
-    background-color: #5377f8;
-}
-
-.bouton-rouge {
-    background-color: #db2d2e;
-}
-
-.bouton-transparent {
-    background-color: transparent;
-    border:1px solid white;
-}
-
-.bouton-noir {
-    background-color:#222;
-}
-
-.bouton-blanc {
-    background-color:#ffffff;
-    color:#323232;
-}
-
-
-.bouton-rouge img {
-    vertical-align: middle;
-}
 
 #header {
     color:white;
@@ -449,3 +386,88 @@ header img {
     margin-top: 40px;
 }
 
+h1 {
+    font-size: 15px;
+    color:#db2d2e;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+h2,h3 {
+    color: #353535;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 0.125em;
+    margin-bottom: 0.4em;
+    line-height: 1.2em;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+i {
+    padding: 0px 5px;
+}
+
+.bouton-rouge,.bouton-bleu,.bouton-transparent,.bouton-noir,.bouton-blanc {
+    text-decoration: none;
+    color:white;
+    padding: 0.9em 1.3em;
+    border-radius: 2px;
+    font-weight: 600;
+    margin: 0px 5px;
+}
+
+.bouton-bleu {
+    background-color: #5377f8;
+}
+
+.bouton-rouge {
+    background-color: #db2d2e;
+}
+
+.bouton-transparent {
+    background-color: transparent;
+    border:1px solid white;
+}
+
+.bouton-noir {
+    background-color:#222;
+}
+
+.bouton-blanc {
+    background-color:#ffffff;
+    color:#323232;
+}
+
+
+.bouton-rouge img {
+    vertical-align: middle;
+}
+
+.popin-ON {
+    position:fixed;
+    top:0px;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background: #727171cc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popin-ON>* {
+        display: block;
+        border: 2px outset #727171;
+        max-width: 100%;
+        border-radius: 2px;
+}
+
+.popin {
+    cursor: pointer;
+}

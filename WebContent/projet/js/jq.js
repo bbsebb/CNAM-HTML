@@ -38,7 +38,27 @@ $(document).ready ( function () {
     // Au demarrage, on affiche le premier formulaire et on selectionne le premier onglet
     $premierOnglet.trigger("click"); 
 
-    //Evénement sur l'élément trusted name.
+    //Popin
+    var popin = false;
+    $("*").click( function () {
+        if(popin === true) {
+            $("#popin").removeClass("popin-ON").empty();
+        }
+    })
 
-    
+    $(".popin").click( function (e) {  
+              e.stopPropagation();
+              if(e.target.nodeName === "IMG") {
+        $("#popin").prepend($(this).html()).addClass("popin-ON");
+              } else if (e.target.nodeName === "I") {
+                e.preventDefault();
+                console.log($(this));
+                $("#popin").prepend("<iframe id=inlineFrameExample title=Inline Frame Example width=300 height=200 src="+$(this).attr("href")+"> </iframe>").addClass("popin-ON");
+              };
+        popin = true;
+    })
+
+
+
+
 })
