@@ -53,7 +53,7 @@ $(document).ready ( function () {
               } else if (e.target.nodeName === "I") {
                 e.preventDefault();
                 console.log($(this));
-                $("#popin").prepend("<iframe id=inlineFrameExample title=Inline Frame Example width=300 height=200 src="+$(this).attr("href")+"> </iframe>").addClass("popin-ON");
+                $("#popin").prepend("<iframe id=inlineFrameExample title=Inline Frame Example width=600 height=400 src="+$(this).attr("href")+"> </iframe>").addClass("popin-ON");
               };
         popin = true;
     })
