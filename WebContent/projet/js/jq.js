@@ -39,25 +39,43 @@ $(document).ready ( function () {
     $premierOnglet.trigger("click"); 
 
     //Popin
+    // booléen pour savoir si le popin est actif ou non
     var popin = false;
-    $("*").click( function () {
-        if(popin === true) {
-            $("#popin").removeClass("popin-ON").empty();
-        }
-    })
-
     $(".popin").click( function (e) {  
-              e.stopPropagation();
-              if(e.target.nodeName === "IMG") {
+              e.stopPropagation(); // Pour eviter de propager le clique et refermer le popin
+              if(e.target.nodeName === "IMG") { // Si c'est un img à afficher
         $("#popin").prepend($(this).html()).addClass("popin-ON");
-              } else if (e.target.nodeName === "I") {
+              } else if (e.target.nodeName === "I") { // Si c'est une icone social
                 e.preventDefault();
-                console.log($(this));
                 $("#popin").prepend("<iframe id=inlineFrameExample title=Inline Frame Example width=600 height=400 src="+$(this).attr("href")+"> </iframe>").addClass("popin-ON");
               };
         popin = true;
     })
 
+
+
+    //Menu deroulant 
+    var menuEstDeroule = false;
+    var $btnMenuDeroulant = $(".nav-deroulant");
+    var $menuDeroulant = $('<div>').addClass("menuDeroulant").append($(".nav-list").clone());
+    $menuDeroulant.appendTo("body").hide();
+    $btnMenuDeroulant.click( function (e) {
+        e.stopPropagation();
+        $menuDeroulant.appendTo("body").show();  
+        menuEstDeroule = true;
+    })
+    
+    // Si il est actif, on clique, nimporte ou pour le fermer
+    $("*:not(.popin):not(.nav-deroulant)").click( function () {
+        if(popin === true) {
+            $("#popin").removeClass("popin-ON").empty();
+            popin = false;
+        }
+        if(menuEstDeroule === true) {
+            $(".menuDeroulant").hide();
+            menuEstDeroule = false;
+        }
+    })
 
 
 
